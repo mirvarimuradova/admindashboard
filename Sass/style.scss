@@ -1,0 +1,293 @@
+@import"__color.scss";
+@import"__default.scss";
+@import"__variable.scss";
+//header===============================
+header{
+    border: 2px solid #f7f7f7;
+    .header-container{
+
+        width: 1400px;
+        margin: 0 auto;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 7px;
+       a{
+            text-decoration: none;
+            
+            img{
+                width: 100px;
+                height: 100px;
+            }
+        }
+
+        div{
+         
+            display: flex;
+            width: 250px;
+            justify-content: space-evenly;
+            i{
+                font-size: 25px;
+            }
+            p{
+                font-family: Poppins-Extralight;
+                font-size: 17px;
+            }
+
+        }
+    }
+}
+
+//====== Main nav =====================
+nav{
+    width: 290px;
+    padding: 40px 0px 0 0;
+    border-right: 2px solid #f7f7f7;
+    ul{
+        li{
+            list-style-type: none;
+            margin: 0px 10px 15px 0;
+            padding: 10px;
+            border-top-right-radius: 25px;
+            border-bottom-right-radius: 25px;
+          
+            a{
+                text-decoration: none;
+                display: flex;
+                align-items: center;
+                font-family: Poppins-Extralight;
+                font-size: 16px;
+                color: $text;
+                margin-left: 20px;
+                i{
+                    font-size: 18px;
+                     margin-right: 10px;
+                     color: #258d8a;
+                }
+
+            }
+
+            &:nth-child(7) {
+               
+                margin-bottom: 77px;
+            }
+        }
+        li:hover{
+            background: $reserved;
+            a{
+                color: #fff;
+            }
+            i{
+                color: #fff;
+
+            }
+            &:nth-child(8){
+                background: $redlinear;
+
+                i{
+                    color:#fff;
+                }
+            }
+        }
+       
+        .logout-btn{
+            a{
+                color: red;
+            i{
+                color: red;
+            }
+        }
+    }
+}}
+
+
+main{
+    display:flex;
+
+
+//part of patient============================
+
+.patient-part{
+    width: 1200px;
+    padding: 0 30px;
+    .patient-filter{
+       
+        width: 500px;
+        margin: 40px auto;
+        
+        .search-container {
+            position: relative;
+            display: inline-flex;
+            align-items: center;
+            background: $reserved; /* Gradient border */
+            padding: 2px; /* Creates space for the border */
+            border-radius: 15px; /* Rounded border */
+        }
+        
+        .search-btn {
+            width: 400px;
+            height: 36px;
+            font-size: 14px;
+            padding-left: 40px; /* Space for the icon */
+            border: none;
+            outline: none;
+            border-radius: inherit; /* Keep the same rounded shape */
+            background: white; /* Match page background */
+        }
+        
+        .search-container i {
+            position: absolute;
+            left: 10px;
+            color: gray;
+        }
+        
+      #filter{
+        border: 1px solid ;
+        padding: 10px;
+        border-radius: 25px;
+        width: 74px;
+        height: 35px;
+        margin-left: 15px;
+
+      }
+        
+
+    }
+
+    .patients{
+        width: 100%;
+        margin-top: 40px;
+        padding: 20px;
+        border: 1px solid rgb(198, 198, 198);
+        border-radius: 15px;
+        table{
+            width: 100%;
+            padding: 10px;
+            tr{
+               
+                td{
+                    text-align: center;
+                    font-family: Poppins-Medium;
+                    font-size: 14px;
+                    color: $text;
+                    i{
+                        font-size: 20px;
+                    }
+                }
+                .image{
+                    width: 80px;
+                    height: 80px;
+                    background-color: red;
+                }
+                &:first-child{
+                    th{
+                        padding-bottom: 40px;
+                        font-family: Poppins-Semibold;
+                        font-size: 12px;
+                        color: $text;
+                    }
+                }
+            }
+
+        }
+    }
+}
+
+// hospitalss part=================================================
+
+
+.hospital-part{
+
+    width: 100%;
+    padding: 20px;
+
+    .hospital-card {
+        background: #ffffff;
+        border-radius: 15px;
+        box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+        padding: 15px;
+        text-align: center;
+        transition: 0.3s ease-in-out;
+        display: flex;
+        justify-content: space-around;
+        margin: 20px;
+        align-items: center;
+
+        &:hover {
+            transform: translateY(-5px);
+            box-shadow: 0px 6px 15px rgba(0, 0, 0, 0.15);
+        }
+
+        .hospital-img {
+            width: 100px;
+            height: 100px;
+            border-radius: 50%;
+            object-fit: cover;
+            margin-bottom: 10px;
+            border: 3px solid #258d8a;
+        }
+
+        .hospital-name {
+            font-size: 18px;
+            font-weight: bold;
+            color: #333;
+            margin-bottom: 5px;
+        }
+
+        .hospital-rating {
+            font-size: 16px;
+            color: #ffa500;
+            display: flex;
+            align-items: center;
+            gap: 5px;
+
+            i {
+                color: #ffa500;
+            }
+        }
+    }
+
+    .hospital-filter{
+        width: 500px;
+        margin: 30px auto;
+    }
+
+    .search-container {
+        position: relative;
+        display: inline-flex;
+        align-items: center;
+        background: $reserved; /* Gradient border */
+        padding: 2px; /* Creates space for the border */
+        border-radius: 15px; /* Rounded border */
+    }
+    
+    .search-btn {
+        width: 400px;
+        height: 36px;
+        font-size: 14px;
+        padding-left: 40px; /* Space for the icon */
+        border: none;
+        outline: none;
+        border-radius: inherit; /* Keep the same rounded shape */
+        background: white; /* Match page background */
+    }
+    
+    .search-container i {
+        position: absolute;
+        left: 10px;
+        color: gray;
+    }
+    
+  #filter{
+    border: 1px solid ;
+    padding: 10px;
+    border-radius: 25px;
+    width: 74px;
+    height: 35px;
+    margin-left: 15px;
+
+  }
+
+}
+}
+

@@ -1,0 +1,257 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+@font-face {
+  font-family: Poppins-Extralight;
+  src: url(../assets/fonts/Poppins/Poppins-ExtraLight.ttf);
+}
+@font-face {
+  font-family: Poppins-Medium;
+  src: url(../assets/fonts/Poppins/Poppins-Medium.ttf);
+}
+@font-face {
+  font-family: Poppins-Thin;
+  src: url(../assets/fonts/Poppins/Poppins-Thin.ttf);
+}
+@font-face {
+  font-family: Poppins-SemiBold;
+  src: url(../assets/fonts/Poppins/Poppins-SemiBold.ttf);
+}
+header {
+  border: 2px solid #f7f7f7;
+}
+header .header-container {
+  width: 1400px;
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 7px;
+}
+header .header-container a {
+  text-decoration: none;
+}
+header .header-container a img {
+  width: 100px;
+  height: 100px;
+}
+header .header-container div {
+  display: flex;
+  width: 250px;
+  justify-content: space-evenly;
+}
+header .header-container div i {
+  font-size: 25px;
+}
+header .header-container div p {
+  font-family: Poppins-Extralight;
+  font-size: 17px;
+}
+
+nav {
+  width: 290px;
+  padding: 40px 0px 0 0;
+  border-right: 2px solid #f7f7f7;
+}
+nav ul li {
+  list-style-type: none;
+  margin: 0px 10px 15px 0;
+  padding: 10px;
+  border-top-right-radius: 25px;
+  border-bottom-right-radius: 25px;
+}
+nav ul li a {
+  text-decoration: none;
+  display: flex;
+  align-items: center;
+  font-family: Poppins-Extralight;
+  font-size: 16px;
+  color: #858585;
+  margin-left: 20px;
+}
+nav ul li a i {
+  font-size: 18px;
+  margin-right: 10px;
+  color: #258d8a;
+}
+nav ul li:nth-child(7) {
+  margin-bottom: 77px;
+}
+nav ul li:hover {
+  background: linear-gradient(180deg, rgb(47, 181, 177) 0%, rgb(26, 101, 98) 50%);
+}
+nav ul li:hover a {
+  color: #fff;
+}
+nav ul li:hover i {
+  color: #fff;
+}
+nav ul li:hover:nth-child(8) {
+  background: linear-gradient(180deg, rgb(255, 0, 0) 0%, rgb(186, 5, 5) 50%);
+}
+nav ul li:hover:nth-child(8) i {
+  color: #fff;
+}
+nav ul .logout-btn a {
+  color: red;
+}
+nav ul .logout-btn a i {
+  color: red;
+}
+
+main {
+  display: flex;
+}
+main .patient-part {
+  width: 1200px;
+  padding: 0 30px;
+}
+main .patient-part .patient-filter {
+  width: 500px;
+  margin: 40px auto;
+}
+main .patient-part .patient-filter .search-container {
+  position: relative;
+  display: inline-flex;
+  align-items: center;
+  background: linear-gradient(180deg, rgb(47, 181, 177) 0%, rgb(26, 101, 98) 50%); /* Gradient border */
+  padding: 2px; /* Creates space for the border */
+  border-radius: 15px; /* Rounded border */
+}
+main .patient-part .patient-filter .search-btn {
+  width: 400px;
+  height: 36px;
+  font-size: 14px;
+  padding-left: 40px; /* Space for the icon */
+  border: none;
+  outline: none;
+  border-radius: inherit; /* Keep the same rounded shape */
+  background: white; /* Match page background */
+}
+main .patient-part .patient-filter .search-container i {
+  position: absolute;
+  left: 10px;
+  color: gray;
+}
+main .patient-part .patient-filter #filter {
+  border: 1px solid;
+  padding: 10px;
+  border-radius: 25px;
+  width: 74px;
+  height: 35px;
+  margin-left: 15px;
+}
+main .patient-part .patients {
+  width: 100%;
+  margin-top: 40px;
+  padding: 20px;
+  border: 1px solid rgb(198, 198, 198);
+  border-radius: 15px;
+}
+main .patient-part .patients table {
+  width: 100%;
+  padding: 10px;
+}
+main .patient-part .patients table tr td {
+  text-align: center;
+  font-family: Poppins-Medium;
+  font-size: 14px;
+  color: #858585;
+}
+main .patient-part .patients table tr td i {
+  font-size: 20px;
+}
+main .patient-part .patients table tr .image {
+  width: 80px;
+  height: 80px;
+  background-color: red;
+}
+main .patient-part .patients table tr:first-child th {
+  padding-bottom: 40px;
+  font-family: Poppins-Semibold;
+  font-size: 12px;
+  color: #858585;
+}
+main .hospital-part {
+  width: 100%;
+  padding: 20px;
+}
+main .hospital-part .hospital-card {
+  background: #ffffff;
+  border-radius: 15px;
+  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+  padding: 15px;
+  text-align: center;
+  transition: 0.3s ease-in-out;
+  display: flex;
+  justify-content: space-around;
+  margin: 20px;
+  align-items: center;
+}
+main .hospital-part .hospital-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0px 6px 15px rgba(0, 0, 0, 0.15);
+}
+main .hospital-part .hospital-card .hospital-img {
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+  -o-object-fit: cover;
+     object-fit: cover;
+  margin-bottom: 10px;
+  border: 3px solid #258d8a;
+}
+main .hospital-part .hospital-card .hospital-name {
+  font-size: 18px;
+  font-weight: bold;
+  color: #333;
+  margin-bottom: 5px;
+}
+main .hospital-part .hospital-card .hospital-rating {
+  font-size: 16px;
+  color: #ffa500;
+  display: flex;
+  align-items: center;
+  gap: 5px;
+}
+main .hospital-part .hospital-card .hospital-rating i {
+  color: #ffa500;
+}
+main .hospital-part .hospital-filter {
+  width: 500px;
+  margin: 30px auto;
+}
+main .hospital-part .search-container {
+  position: relative;
+  display: inline-flex;
+  align-items: center;
+  background: linear-gradient(180deg, rgb(47, 181, 177) 0%, rgb(26, 101, 98) 50%); /* Gradient border */
+  padding: 2px; /* Creates space for the border */
+  border-radius: 15px; /* Rounded border */
+}
+main .hospital-part .search-btn {
+  width: 400px;
+  height: 36px;
+  font-size: 14px;
+  padding-left: 40px; /* Space for the icon */
+  border: none;
+  outline: none;
+  border-radius: inherit; /* Keep the same rounded shape */
+  background: white; /* Match page background */
+}
+main .hospital-part .search-container i {
+  position: absolute;
+  left: 10px;
+  color: gray;
+}
+main .hospital-part #filter {
+  border: 1px solid;
+  padding: 10px;
+  border-radius: 25px;
+  width: 74px;
+  height: 35px;
+  margin-left: 15px;
+}/*# sourceMappingURL=style.css.map */
