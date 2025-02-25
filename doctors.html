@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Rəmz</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"/>
+    <link rel="stylesheet" href="./Sass/style.css">
+</head>
+<body>
+    
+    <!-- Header -->
+     <header>
+        <div class="header-container">
+            <a href="#"><img src="./assets/img/logo-light 1.svg" alt="logo"></a>
+            <div class="admin">
+                <i class="fa-solid fa-user"></i>
+                <p id="admin_fullname" class="admin_fullname">
+                   Zahra Malikzada
+                </p>
+            </div>
+        </div>
+     </header>
+
+     <!-- Main -->
+     <main>
+
+        <!-- Nav side -->
+         <nav>
+            <ul class="menu-list">
+                <li class="list-item"><a href="patients.html"><i class="fa-solid fa-hospital-user"></i> Patients</a></li>
+                <li class="list-item"><a href="doctors.html"><i class="fa-solid fa-user-doctor"></i> Doctors</a></li>
+                <li class="list-item"><a href="hospitals.html"><i class="fa-solid fa-hospital"></i> Hospitals</a></li>
+                <li class="list-item"><a href="admins.html"><i class="fa-solid fa-user-tie"></i> Admins</a></li>
+                <li class="list-item"><a href="appointments.html"><i class="fa-solid fa-calendar-check"></i> Appointments</a></li>
+                <li class="list-item"><a href="subscriptions.html"><i class="fa-solid fa-bell"></i> Subscriptions</a></li>
+                <li class="list-item"><a href="statistics.html"><i class="fa-solid fa-chart-simple"></i> Statistics</a></li>
+                <li class="list-item"><a href="settings.html"><i class="fa-solid fa-gears"></i> Settings</a></li>
+                <li class="list-item logout"><a href="#" class="logout_btn"><i class="fa-solid fa-arrow-right-from-bracket"></i> Log out</a></li>
+            </ul>
+         </nav>
+
+         <!-- Doctor data -->
+         <section class="doctor-main">
+            <!-- Filter -->
+            <div class="doctor-finding">
+                <div class="search-container">
+                    <input type="text" name="" id="doctorsearch_input" value="" placeholder="Name, Surname, Speciality, Hospital">
+                    <i class="fa-solid fa-magnifying-glass"></i>
+                </div>
+                <select class="doctor-filter" id="doctor-filter">
+                    <option value="Oldes">Oldest</option>
+                    <option value="Newest">Newest</option>
+                </select>
+                <select name="" id="doctor-speciality" class =doctor-speciality>
+                    <option value="Speciality" hidden>Speciality</option>
+                </select>
+            </div>
+
+            <!-- Doctors -->
+            <div class="doctors-container">
+                <table class="doctor-table">
+                    <thead >
+                        <tr>
+                            <th>Image</th>
+                            <th>Name</th>
+                            <th>Surname</th>
+                            <th>Speciality</th>
+                            <th>Birthdate</th>
+                            <th>Update</th>
+                            <th>Delete</th>
+                        </tr>
+                    </thead>
+                    <tbody class="doc-tbody"></tbody>
+                </table>
+            </div>
+        </section>
+     </main>
+
+
+    <script src="doctor.js"></script>
+</body>
+</html>

@@ -254,4 +254,438 @@ main .hospital-part #filter {
   width: 74px;
   height: 35px;
   margin-left: 15px;
+}
+main .doctor-main {
+  width: 100%;
+  padding: 40px 25px;
+  display: flex;
+  flex-direction: column;
+  background-color: rgba(153, 235, 249, 0.1);
+}
+main .doctor-main .doctor-finding {
+  margin: 0 auto;
+  display: flex;
+  align-items: center;
+}
+main .doctor-main .doctor-finding div {
+  position: relative;
+  display: inline-flex;
+  align-items: center;
+  background: linear-gradient(180deg, rgb(47, 181, 177) 0%, rgb(26, 101, 98) 50%);
+  padding: 2px;
+  border-radius: 15px;
+}
+main .doctor-main .doctor-finding div input {
+  width: 400px;
+  height: 36px;
+  font-size: 14px;
+  padding-left: 40px;
+  border: none;
+  outline: none;
+  border-radius: inherit;
+  background: white;
+}
+main .doctor-main .doctor-finding div i {
+  position: absolute;
+  left: 10px;
+  color: gray;
+}
+main .doctor-main .doctor-finding select {
+  width: 100px;
+  padding: 10px;
+  border-radius: 25px;
+  margin-left: 15px;
+}
+main .doctor-main .doctors-container {
+  width: 100%;
+  margin-top: 40px;
+  padding: 20px;
+  border: 1px solid rgb(198, 198, 198);
+  border-radius: 15px;
+}
+main .doctor-main .doctors-container table {
+  width: 100%;
+  padding: 10px;
+  border-collapse: collapse;
+}
+main .doctor-main .doctors-container table thead tr th {
+  text-align: left;
+  padding-bottom: 40px;
+  padding-left: 10px;
+  font-family: Poppins-Semibold;
+  font-size: 12px;
+  color: #858585;
+}
+main .doctor-main .doctors-container table tbody tr {
+  cursor: pointer;
+}
+main .doctor-main .doctors-container table tbody tr td {
+  padding: 10px 0;
+  font-family: Poppins-Medium;
+  font-size: 14px;
+  color: #858585;
+}
+main .doctor-main .doctors-container table tbody tr td:first-child {
+  padding-left: 10px;
+  border-top-left-radius: 10px;
+  border-bottom-left-radius: 10px;
+}
+main .doctor-main .doctors-container table tbody tr td:last-child {
+  border-top-right-radius: 10px;
+  border-bottom-right-radius: 10px;
+}
+main .doctor-main .doctors-container table tbody tr td img {
+  width: 80px;
+  height: 80px;
+}
+main .doctor-main .doctors-container table tbody tr td i {
+  font-size: 20px;
+  padding-left: 15px;
+}
+main .doctor-main .doctors-container table tbody tr td .fa-pen-to-square {
+  color: rgb(16, 123, 255);
+}
+main .doctor-main .doctors-container table tbody tr td .fa-trash {
+  color: red;
+}
+main .doctor-main .doctors-container table tbody tr .image {
+  width: 80px;
+  height: 80px;
+  background-color: red;
+}
+main .doctor-main .doctors-container table tbody tr th {
+  text-align: left;
+  padding-bottom: 40px;
+  padding-left: 10px;
+  font-family: Poppins-Semibold;
+  font-size: 12px;
+  color: #858585;
+}
+main .doctor-main .doctors-container table tbody tr:nth-child(n):hover {
+  background-color: rgb(220, 220, 220);
+}
+main .admin-main {
+  width: 100%;
+  padding: 40px 25px;
+  display: flex;
+  flex-direction: column;
+  background-color: rgba(153, 235, 249, 0.1);
+}
+main .admin-main .admin-finding {
+  margin: 0 auto;
+  display: flex;
+  align-items: center;
+}
+main .admin-main .admin-finding div {
+  position: relative;
+  display: inline-flex;
+  align-items: center;
+  background: linear-gradient(180deg, rgb(47, 181, 177) 0%, rgb(26, 101, 98) 50%);
+  padding: 2px;
+  border-radius: 15px;
+}
+main .admin-main .admin-finding div input {
+  width: 400px;
+  height: 36px;
+  font-size: 14px;
+  padding-left: 40px;
+  border: none;
+  outline: none;
+  border-radius: inherit;
+  background: white;
+}
+main .admin-main .admin-finding div i {
+  position: absolute;
+  left: 10px;
+  color: gray;
+}
+main .admin-main .admins-container {
+  width: 100%;
+  margin-top: 40px;
+  padding: 20px;
+  border: 1px solid rgb(198, 198, 198);
+  border-radius: 15px;
+}
+main .admin-main .admins-container .admin-table {
+  width: 100%;
+  padding: 10px;
+  border-collapse: collapse;
+}
+main .admin-main .admins-container .admin-table .adm-thead tr th {
+  text-align: left;
+  padding-bottom: 40px;
+  font-family: Poppins-Semibold;
+  font-size: 12px;
+  color: #858585;
+}
+main .admin-main .admins-container .admin-table .adm-tbody tr {
+  cursor: pointer;
+}
+main .admin-main .admins-container .admin-table .adm-tbody tr td {
+  padding: 10px 0;
+  font-family: Poppins-Medium;
+  font-size: 14px;
+  color: #858585;
+}
+main .admin-main .admins-container .admin-table .adm-tbody tr td:first-child {
+  padding-left: 10px;
+  border-top-left-radius: 10px;
+  border-bottom-left-radius: 10px;
+}
+main .admin-main .admins-container .admin-table .adm-tbody tr td:last-child {
+  border-top-right-radius: 10px;
+  border-bottom-right-radius: 10px;
+}
+main .admin-main .admins-container .admin-table .adm-tbody tr td img {
+  width: 80px;
+  height: 80px;
+}
+main .admin-main .admins-container .admin-table .adm-tbody tr td i {
+  font-size: 20px;
+  padding-left: 15px;
+}
+main .admin-main .admins-container .admin-table .adm-tbody tr td .fa-pen-to-square {
+  color: rgb(16, 123, 255);
+}
+main .admin-main .admins-container .admin-table .adm-tbody tr td .fa-trash {
+  color: red;
+}
+main .admin-main .admins-container .admin-table .adm-tbody tr .image {
+  width: 80px;
+  height: 80px;
+  background-color: red;
+}
+main .admin-main .admins-container .admin-table .adm-tbody tr th {
+  text-align: left;
+  padding-bottom: 40px;
+  padding-left: 10px;
+  font-family: Poppins-Semibold;
+  font-size: 12px;
+  color: #858585;
+}
+main .admin-main .admins-container .admin-table .adm-tbody tr:nth-child(n):hover {
+  background-color: rgb(220, 220, 220);
+}
+main .appointment-main {
+  width: 100%;
+  padding: 40px 25px;
+  display: flex;
+  flex-direction: column;
+  background-color: rgba(153, 235, 249, 0.1);
+}
+main .appointment-main .appointment-finding {
+  margin: 0 auto;
+  display: flex;
+  align-items: center;
+}
+main .appointment-main .appointment-finding div {
+  position: relative;
+  display: inline-flex;
+  align-items: center;
+  background: linear-gradient(180deg, rgb(47, 181, 177) 0%, rgb(26, 101, 98) 50%);
+  padding: 2px;
+  border-radius: 15px;
+}
+main .appointment-main .appointment-finding div input {
+  width: 400px;
+  height: 36px;
+  font-size: 14px;
+  padding-left: 40px;
+  border: none;
+  outline: none;
+  border-radius: inherit;
+  background: white;
+}
+main .appointment-main .appointment-finding div i {
+  position: absolute;
+  left: 10px;
+  color: gray;
+}
+main .appointment-main .appointment-finding select {
+  width: 100px;
+  padding: 10px;
+  border-radius: 25px;
+  margin-left: 15px;
+}
+main .appointment-main .appointments-container {
+  width: 100%;
+  margin-top: 40px;
+  padding: 20px;
+  border: 1px solid rgb(198, 198, 198);
+  border-radius: 15px;
+}
+main .appointment-main .appointments-container .appointment-table {
+  width: 100%;
+  padding: 10px;
+  border-collapse: collapse;
+}
+main .appointment-main .appointments-container .appointment-table .appointment-thead tr th {
+  text-align: left;
+  padding-bottom: 40px;
+  font-family: Poppins-Semibold;
+  font-size: 12px;
+  color: #858585;
+}
+main .appointment-main .appointments-container .appointment-table .appointment-tbody tr {
+  cursor: pointer;
+}
+main .appointment-main .appointments-container .appointment-table .appointment-tbody tr td {
+  padding: 10px 0;
+  font-family: Poppins-Medium;
+  font-size: 14px;
+  color: #858585;
+}
+main .appointment-main .appointments-container .appointment-table .appointment-tbody tr td:first-child {
+  border-top-left-radius: 10px;
+  border-bottom-left-radius: 10px;
+}
+main .appointment-main .appointments-container .appointment-table .appointment-tbody tr td:last-child {
+  border-top-right-radius: 10px;
+  border-bottom-right-radius: 10px;
+}
+main .appointment-main .appointments-container .appointment-table .appointment-tbody tr td img {
+  width: 80px;
+  height: 80px;
+}
+main .appointment-main .appointments-container .appointment-table .appointment-tbody tr td i {
+  font-size: 20px;
+  padding-left: 15px;
+}
+main .appointment-main .appointments-container .appointment-table .appointment-tbody tr td .fa-pen-to-square {
+  color: rgb(16, 123, 255);
+}
+main .appointment-main .appointments-container .appointment-table .appointment-tbody tr td .fa-trash {
+  color: red;
+}
+main .appointment-main .appointments-container .appointment-table .appointment-tbody tr td .Reserved {
+  color: rgb(0, 145, 255);
+}
+main .appointment-main .appointments-container .appointment-table .appointment-tbody tr td .Canceled {
+  color: red;
+}
+main .appointment-main .appointments-container .appointment-table .appointment-tbody tr td .Unavailable {
+  color: rgb(255, 179, 0);
+}
+main .appointment-main .appointments-container .appointment-table .appointment-tbody tr .image {
+  width: 80px;
+  height: 80px;
+  background-color: red;
+}
+main .appointment-main .appointments-container .appointment-table .appointment-tbody tr th {
+  text-align: left;
+  padding-bottom: 40px;
+  padding-left: 10px;
+  font-family: Poppins-Semibold;
+  font-size: 12px;
+  color: #858585;
+}
+main .appointment-main .appointments-container .appointment-table .appointment-tbody tr:nth-child(n):hover {
+  background-color: rgb(220, 220, 220);
+}
+main .subscription-main {
+  width: 100%;
+  padding: 40px 25px;
+  display: flex;
+  flex-direction: column;
+  background-color: rgba(153, 235, 249, 0.1);
+}
+main .subscription-main .subscription-finding {
+  margin: 0 auto;
+  display: flex;
+  align-items: center;
+}
+main .subscription-main .subscription-finding div {
+  position: relative;
+  display: inline-flex;
+  align-items: center;
+  background: linear-gradient(180deg, rgb(47, 181, 177) 0%, rgb(26, 101, 98) 50%);
+  padding: 2px;
+  border-radius: 15px;
+}
+main .subscription-main .subscription-finding div input {
+  width: 400px;
+  height: 36px;
+  font-size: 14px;
+  padding-left: 40px;
+  border: none;
+  outline: none;
+  border-radius: inherit;
+  background: white;
+}
+main .subscription-main .subscription-finding div i {
+  position: absolute;
+  left: 10px;
+  color: gray;
+}
+main .subscription-main .subscription-finding select {
+  width: 100px;
+  padding: 10px;
+  border-radius: 25px;
+  margin-left: 15px;
+}
+main .subscription-main .subscriptions-container {
+  width: 100%;
+  margin-top: 40px;
+  padding: 20px;
+  border: 1px solid rgb(198, 198, 198);
+  border-radius: 15px;
+}
+main .subscription-main .subscriptions-container .subscription-table {
+  width: 100%;
+  padding: 10px;
+  border-collapse: collapse;
+}
+main .subscription-main .subscriptions-container .subscription-table .subscription-thead tr th {
+  text-align: left;
+  padding-bottom: 40px;
+  font-family: Poppins-Semibold;
+  font-size: 12px;
+  color: #858585;
+}
+main .subscription-main .subscriptions-container .subscription-table .subscription-tbody tr {
+  cursor: pointer;
+}
+main .subscription-main .subscriptions-container .subscription-table .subscription-tbody tr td {
+  padding: 10px 0;
+  font-family: Poppins-Medium;
+  font-size: 14px;
+  color: #858585;
+}
+main .subscription-main .subscriptions-container .subscription-table .subscription-tbody tr td:first-child {
+  border-top-left-radius: 10px;
+  border-bottom-left-radius: 10px;
+}
+main .subscription-main .subscriptions-container .subscription-table .subscription-tbody tr td:last-child {
+  border-top-right-radius: 10px;
+  border-bottom-right-radius: 10px;
+}
+main .subscription-main .subscriptions-container .subscription-table .subscription-tbody tr td img {
+  width: 80px;
+  height: 80px;
+}
+main .subscription-main .subscriptions-container .subscription-table .subscription-tbody tr td i {
+  font-size: 20px;
+  padding-left: 15px;
+}
+main .subscription-main .subscriptions-container .subscription-table .subscription-tbody tr td .fa-pen-to-square {
+  color: rgb(16, 123, 255);
+}
+main .subscription-main .subscriptions-container .subscription-table .subscription-tbody tr td .fa-trash {
+  color: red;
+}
+main .subscription-main .subscriptions-container .subscription-table .subscription-tbody tr .image {
+  width: 80px;
+  height: 80px;
+  background-color: red;
+}
+main .subscription-main .subscriptions-container .subscription-table .subscription-tbody tr th {
+  text-align: left;
+  padding-bottom: 40px;
+  padding-left: 10px;
+  font-family: Poppins-Semibold;
+  font-size: 12px;
+  color: #858585;
+}
+main .subscription-main .subscriptions-container .subscription-table .subscription-tbody tr:nth-child(n):hover {
+  background-color: rgb(220, 220, 220);
 }/*# sourceMappingURL=style.css.map */
