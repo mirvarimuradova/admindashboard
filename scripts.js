@@ -14,6 +14,7 @@ patients.forEach(element => {
 
   
     const tr = document.createElement("tr");
+    tr.classList.add("trpatient");
     const tdimg = document.createElement("td");
     const tdname = document.createElement("td");
     const tdsurname =document.createElement("td");
@@ -23,7 +24,8 @@ patients.forEach(element => {
     const image = document.createElement("img");
     image.src = element.image;
     image.alt = `${element.firstName} ${element.lastName}`; 
-    image.style.width = "100px";
+    image.classList.add("img-patient");
+
     tdimg.appendChild(image);
 
         // Yeni `p` elementi yaradılır və məlumatlar əlavə edilir

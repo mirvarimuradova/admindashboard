@@ -52,7 +52,7 @@ header .header-container div p {
 }
 
 nav {
-  width: 290px;
+  width: 240px;
   padding: 40px 0px 0 0;
   border-right: 2px solid #f7f7f7;
 }
@@ -106,7 +106,8 @@ main {
   display: flex;
 }
 main .patient-part {
-  width: 1200px;
+  background-color: #F5FDFE;
+  width: 100%;
   padding: 0 30px;
 }
 main .patient-part .patient-filter {
@@ -154,8 +155,11 @@ main .patient-part .patients {
 main .patient-part .patients table {
   width: 100%;
   padding: 10px;
+  border-collapse: collapse;
 }
 main .patient-part .patients table tr td {
+  width: 200px;
+  padding: 10px;
   text-align: center;
   font-family: Poppins-Medium;
   font-size: 14px;
@@ -164,9 +168,8 @@ main .patient-part .patients table tr td {
 main .patient-part .patients table tr td i {
   font-size: 20px;
 }
-main .patient-part .patients table tr .image {
-  width: 80px;
-  height: 80px;
+main .patient-part .patients table tr .img-patient {
+  width: 75px;
   background-color: red;
 }
 main .patient-part .patients table tr:first-child th {
@@ -175,9 +178,13 @@ main .patient-part .patients table tr:first-child th {
   font-size: 12px;
   color: #858585;
 }
+main .patient-part .patients table .trpatient:hover {
+  background-color: #DCDCDC;
+}
 main .hospital-part {
   width: 100%;
   padding: 20px;
+  background-color: #F5FDFE;
 }
 main .hospital-part .hospital-card {
   background: #ffffff;
@@ -688,4 +695,50 @@ main .subscription-main .subscriptions-container .subscription-table .subscripti
 }
 main .subscription-main .subscriptions-container .subscription-table .subscription-tbody tr:nth-child(n):hover {
   background-color: rgb(220, 220, 220);
+}
+main .settings {
+  width: 80%;
+  background-color: #F5FDFE;
+}
+main .settings-container {
+  width: 1050px;
+  margin: 50px auto;
+  background: white;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+main .settings-container h2 {
+  text-align: center;
+  margin-bottom: 20px;
+  font-size: 22px;
+  color: #333;
+}
+main .settings-container .form-group {
+  margin-bottom: 15px;
+}
+main .settings-container .form-group label {
+  display: block;
+  font-weight: bold;
+  margin-bottom: 5px;
+}
+main .settings-container .form-group input {
+  width: 100%;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  font-size: 16px;
+}
+main .settings-container .btn {
+  width: 100%;
+  background: #007bff;
+  color: white;
+  border: none;
+  padding: 10px;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 16px;
+}
+main .settings-container .btn:hover {
+  background: #0056b3;
 }/*# sourceMappingURL=style.css.map */

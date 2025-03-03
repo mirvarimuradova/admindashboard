@@ -40,7 +40,7 @@ header{
 
 //====== Main nav =====================
 nav{
-    width: 290px;
+    width: 240px;
     padding: 40px 0px 0 0;
     border-right: 2px solid #f7f7f7;
     ul{
@@ -108,7 +108,8 @@ main{
 //part of patient============================
 
 .patient-part{
-    width: 1200px;
+    background-color: #F5FDFE;
+    width: 100%;
     padding: 0 30px;
     .patient-filter{
        
@@ -163,9 +164,12 @@ main{
         table{
             width: 100%;
             padding: 10px;
+            border-collapse: collapse;
             tr{
                
                 td{
+                    width: 200px;
+                    padding: 10px;
                     text-align: center;
                     font-family: Poppins-Medium;
                     font-size: 14px;
@@ -174,9 +178,10 @@ main{
                         font-size: 20px;
                     }
                 }
-                .image{
-                    width: 80px;
-                    height: 80px;
+              
+                .img-patient{
+                    width: 75px;
+                   
                     background-color: red;
                 }
                 &:first-child{
@@ -187,6 +192,9 @@ main{
                         color: $text;
                     }
                 }
+            }
+            .trpatient:hover{
+                background-color: #DCDCDC;
             }
 
         }
@@ -200,7 +208,7 @@ main{
 
     width: 100%;
     padding: 20px;
-
+   background-color: #F5FDFE;
     .hospital-card {
         background: #ffffff;
         border-radius: 15px;
@@ -756,5 +764,62 @@ main{
         }
     }
 }
+
+//*************** Settings part ***********
+        .settings{
+            width: 80%;
+            background-color: #F5FDFE;
+        }
+        .settings-container {
+            width: 1050px;
+            margin: 50px auto;
+            background: white;
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+
+             h2 {
+                text-align: center;
+                margin-bottom: 20px;
+                font-size: 22px;
+                color: #333;
+
+              
+            }
+            .form-group {
+                margin-bottom: 15px;
+
+
+                label {
+                    display: block;
+                    font-weight: bold;
+                    margin-bottom: 5px;
+                }
+                 input {
+                    width: 100%;
+                    padding: 10px;
+                    border: 1px solid #ccc;
+                    border-radius: 5px;
+                    font-size: 16px;
+                }
+            }
+           
+            .btn {
+                width: 100%;
+                background: #007bff;
+                color: white;
+                border: none;
+                padding: 10px;
+                border-radius: 5px;
+                cursor: pointer;
+                font-size: 16px;
+               
+            }
+            .btn:hover {
+                background: #0056b3;
+            }
+        }
+       
+      
 }
 
