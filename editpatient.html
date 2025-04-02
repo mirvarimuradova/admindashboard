@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Edit Patient</title>
+    <link rel="stylesheet" href="./Sass/style.css">
+</head>
+<body>
+    <header>
+        <div class="header-container">
+            <a href="index.html">
+                <img src="./assets/images/output-onlinepngtools 2.svg" alt="">
+            </a>
+        </div>
+    </header>
+
+    <main>
+        <section class="edit-patient-part">
+            <h2>Edit Patient</h2>
+            <form id="editPatientForm">
+                <input type="hidden" id="patientId">
+                
+                <label for="editName">Name:</label>
+                <input type="text" id="editName" required>
+
+                <label for="editSurname">Surname:</label>
+                <input type="text" id="editSurname" required>
+
+                <label for="editBirthdate">Birthdate:</label>
+                <input type="date" id="editBirthdate" required>
+
+                <label for="editPhone">Phone:</label>
+                <input type="text" id="editPhone" required>
+
+                <label for="editEmail">Email:</label>
+                <input type="text" id="editEmail" required>
+
+                <label for="editGender">Gender:</label>
+                <select id="editGender">
+                    <option value="2">Male</option>
+                    <option value="1">Female</option>
+                </select>
+
+                <button type="submit">Save Changes</button>
+            </form>
+        </section>
+    </main>
+    <script src="./edit.js"></script>
+</body>
+</html>
