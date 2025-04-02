@@ -54,7 +54,55 @@
                 <select name="" id="doctor-speciality" class =doctor-speciality>
                     <option value="Speciality" hidden>Speciality</option>
                 </select>
+
+                <button class="add-button" id="addDoctor_btn"> Add + </button>
             </div>
+
+            <!-- ADD MODUL -->
+            <div id="addDoctorModal" class="modal">
+                <div class="modal-content">
+                    <span class="close" id="closeModal">&times;</span>
+                    <h2>Add Doctor</h2>
+                    <form id="addDoctorForm" >
+                        <label for="doctorName">Name:</label>
+                        <input type="text" id="doctorName" name="Name" required>
+            
+                        <label for="doctorSurname">Surname:</label>
+                        <input type="text" id="doctorSurname" name="Surname" required>
+            
+                        <label for="doctorSpeciality">Speciality:</label>
+                        <input type="text" id="doctorSpeciality" name="Speciality" required>
+            
+                        <label for="doctorBirthdate">Birthdate:</label>
+                        <input type="date" id="doctorBirthdate" name="Birthdate" required>
+            
+                        
+                        <label for="doctorUniversity">University:</label>
+                        <input type="text" id="doctorUniversity" name="University" required>
+
+
+                        <div class="doctornum_properties">
+
+                            <label for="doctorExperience">Experience:</label>
+                            <input type="number" id="doctorExperience" name="Experience" required>
+    
+                            <label for="doctorValue">Value:</label>
+                            <input type="number" id="doctorValue" name="Value" required>
+    
+                            <label for="doctorHospitalID">HospitalID:</label>
+                            <input type="number" id="doctorHospitalID" name="HospitalID" required>
+
+                        </div>
+                       
+                        <label for="doctorImage">Image:</label>
+                        <input type="file" id="doctorImage" name="ImagePath" accept="image/*">
+            
+                        <button type="submit">Add Doctor</button>
+                    </form>
+                </div>
+            </div>
+          
+               
 
             <!-- Doctors -->
             <div class="doctors-container">
